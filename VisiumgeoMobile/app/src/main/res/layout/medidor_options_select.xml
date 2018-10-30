@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/red_action_bar">
+
+        <TextView
+            android:id="@+id/ponto_entrega_title"
+            android:text="Medidor"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/red_action_bar"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/rlTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/editar_medidor"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:text="Editar"
+        android:textColor="@color/color_primary_alpha"
+        android:background="@drawable/selector_white_button"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/excluir_medidor"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:text="Excluir"
+        android:textColor="@color/color_primary_alpha"
+        android:background="@drawable/selector_white_button"
+        android:layout_height="50dp"/>
+    </LinearLayout>
+</RelativeLayout>

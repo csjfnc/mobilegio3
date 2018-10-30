@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#8b000000">
+
+    <TextView
+        android:id="@+id/textTituloOrdem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="JAG-020"/>
+
+
+    <RelativeLayout
+        android:id="@+id/lyt1"
+        android:layout_below="@+id/textTituloOrdem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/totalPostes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:text="Postes: 10"/>
+
+        <TextView
+            android:id="@+id/totalDemandas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/totalPostes"
+            android:text="Demandas: 10"/>
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_below="@+id/textTituloOrdem"
+    android:layout_toRightOf="@+id/lyt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp">
+
+    <TextView
+        android:id="@+id/totalStrands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Strands: 10"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/totalAnotacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/totalStrands"
+        android:text="Anotações: 10"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

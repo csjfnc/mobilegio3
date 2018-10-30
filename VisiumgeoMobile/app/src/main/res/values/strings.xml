@@ -1,0 +1,160 @@
+<resources>
+
+    <string name="app_name">Visium Geo</string>
+    <string name="app_sub_name">Serviço de Campo</string>
+
+    <string name="splash_permissions">É necessário que você aceite as permissões.</string>
+    <string name="splash_device_not_supported">Este aparelho não suporta Google Play Services</string>
+
+    <string name="login_welcome">Bem Vindo</string>
+    <string name="login_username">Usuário</string>
+    <string name="login_password">Senha</string>
+    <string name="login_sign_in">Entrar</string>
+    <string name="login_dialog_title">Autênticando</string>
+    <string name="login_dialog_message">@string/please_wait</string>
+    <string name="login_error">Usuário ou senha inválidos.</string>
+    <string name="login_invalid_fields">Por favor verifique os dados informados.</string>
+
+    <string name="maps_service_order_title">Busque pelas Ordens de Serviço</string>
+    <string name="maps_service_order_dialog_title">Buscando cidade</string>
+    <string name="maps_service_order_dialog_message">@string/please_wait</string>
+    <string name="maps_service_order_city_selected_dialog_title">Buscando Ordens de Serviço</string>
+    <string name="maps_service_order_city_selected_dialog_message">@string/please_wait</string>
+    <string name="maps_service_order_details_selected_dialog_title">Buscando Ordem de Serviço %1$s</string>
+    <string name="maps_service_order_details_selected_dialog_message">@string/please_wait</string>
+    <string name="maps_service_order_details_error">Não foi possível obter os detalhes da ordem de serviço %1$s</string>
+    <string name="maps_service_order_cities_error">Não foi possível localizar nenhuma cidade</string>
+    <string name="maps_service_order_error">Não foi possível localizar nenhuma ordem de serviço</string>
+    <string name="maps_service_order_update_dialog_title">Atualizando ordem de serviço %1$s</string>
+    <string name="maps_service_order_update_dialog_message">@string/please_wait</string>
+    <string name="maps_service_order_update_success">Atualizado com sucesso</string>
+    <string name="maps_service_order_update_error">Não foi possível atualizar a ordem de serviço %1$s</string>
+    <string name="maps_service_posts_dialog_title">Obtendo lista de postes da ordem de serviço %1$s</string>
+    <string name="maps_service_posts_dialog_message">@string/please_wait</string>
+    <string name="maps_service_posts_error">Falha ao obter os postes da ordem de serviço %1$s</string>
+    <string name="maps_service_publish_dialog_title">Publicando as informações da ordem de serviço %1$s</string>
+    <string name="maps_service_publish_dialog_message">@string/please_wait</string>
+    <string name="maps_service_publish_success">Ordem de Serviço %1$s publicada com sucesso!</string>
+    <string name="maps_service_publish_error">Falha ao publicar as informações da ordem de serviço %1$s</string>
+    <string name="maps_service_publish_not_found">Informações não localizadas da ordem de serviço %1$s</string>
+
+    <string name="dialog_cities_list_title">Selecione a Cidade</string>
+
+    <string name="dialog_lighting_edit_title">Editando IP: %1$s</string>
+    <string name="dialog_lighting_edit_create_title">Nova IP</string>
+    <string name="dialog_lighting_edit_saving_title">Salvando IP</string>
+    <string name="dialog_lighting_edit_saving_message">@string/please_wait</string>
+    <string name="dialog_lighting_edit_saving_error">Não foi possível salvar a IP</string>
+    <string name="dialog_lighting_edit_saving_success">IP Salva com Sucesso</string>
+    <string name="dialog_lighting_edit_light_fixture_amount_required">Preencha a Quantidade de Luminárias</string>
+    <string name="dialog_lighting_edit_power_phase_required">Preencha a Fase</string>
+    <string name="dialog_lighting_edit_lamp_amount_required">Preencha a Quanidade de Lampadas</string>
+
+    <string name="dialog_lighting_list_title">IPs do Poste Geo Code: %1$s</string>
+    <string name="dialog_lighting_list_empty">Ainda não há IPs cadastradas</string>
+
+    <string name="dialog_lighting_arm_type">Tipo do Braço</string>
+    <string name="dialog_lighting_fixture_type">Tipo da Luminária</string>
+    <string name="dialog_lighting_fixture_amount">Quantidade de Luminárias</string>
+    <string name="dialog_lighting_lamp_type">Tipo da Lampada</string>
+    <string name="dialog_lighting_power_rating">Potência</string>
+    <string name="dialog_lighting_power_phase">Fase</string>
+    <string name="dialog_lighting_trigger">Acionamento</string>
+    <string name="dialog_lighting_status">Lampada Acesa?</string>
+    <string name="dialog_lighting_lamp_amount">Quanidade de Lampadas</string>
+    <string name="dialog_lighting_title">Buscando IPs</string>
+    <string name="dialog_lighting_message">Aguarde</string>
+    <string name="dialog_lighting_error">Falha ao obter os IPs do Poste Geo Code: %1$s</string>
+    <string name="dialog_lighting_hint_power_phase">A B C N V</string>
+
+    <string name="dialog_service_order_title">Ordem de Serviço: %1$s</string>
+    <string name="dialog_service_order_start_date">Data de Criação</string>
+    <string name="dialog_service_order_finish_date">Data de Encerramento</string>
+    <string name="dialog_service_order_finish_close">Encerrar</string>
+    <string name="dialog_service_order_finish_open">Abrir</string>
+    <string name="dialog_service_order_sync">Sincronizar</string>
+    <string name="dialog_service_order_publish">Publicar Alterações</string>
+    <string name="dialog_service_order_user">Colaborador Responsável</string>
+    <string name="dialog_service_order_posts_number">Número de Postes</string>
+    <string name="dialog_service_order_finished_posts_number">Número de Postes Finalizados</string>
+    <string name="dialog_service_order_posts_button">Ver Postes</string>
+    <string name="dialog_demanda_actions_title">Código Geo da Demanda: %1$s</string>
+    <string name="dialog_post_actions_title">Código Geo do Poste: %1$s</string>
+    <string name="dialog_post_actions_edit">Editar Poste</string>
+    <string name="dialog_post_actions_delete">Apagar Poste</string>
+    <string name="dialog_post_actions_delete_title">Apagar Poste</string>
+    <string name="dialog_post_actions_delete_message">Tem certeza que deseja apagar o poste?</string>
+    <string name="dialog_post_actions_list_lighting">Editar Iluminação</string>
+
+    <string name="dialog_deleting_title">Apagando poste</string>
+    <string name="dialog_post_delete_success">Poste apagado com sucesso!</string>
+    <string name="dialog_post_delete_error">Houve algum problema apagando o poste. Por favor, tente novamente.</string>
+
+    <string name="dialog_post_edit_title">Editando Poste Código Geo: %1$s</string>
+    <string name="dialog_post_edit_creating_title">Criando Poste</string>
+    <string name="dialog_ponto_entrega_edit_creating_title">Criando Ponto de Entrega</string>
+    <string name="dialog_post_edit_lat">Latitude</string>
+    <string name="dialog_post_edit_lon">Longitude</string>
+    <string name="dialog_post_edit_location">Buscar localização no Mapa</string>
+    <string name="dialog_post_edit_transaction">Finalizado?</string>
+    <string name="dialog_post_edit_image">Imagens</string>
+    <string name="dialog_post_edit_image_tag">ADICIONAR IMAGEM</string>
+    <string name="dialog_post_edit_saving_title">Salvando Poste Código Geo: %1$s</string>
+    <string name="dialog_post_edit_saving_message">@string/please_wait</string>
+    <string name="dialog_post_edit_saving_error">Não foi possível salvar o Poste</string>
+    <string name="dialog_post_edit_saving_success">Salvo com Sucesso</string>
+    <string name="dialog_post_edit_pickup_location_error">Falha ao obter nova localização</string>
+
+    <string name="maps_posts_new_location_error">Falha ao obter localização do novo Poste</string>
+
+    <string name="pick_location">Selecione a localização</string>
+    <string name="pick_location_button">Informar localização</string>
+    <string name="pick_location_label">Clique no local da localização</string>
+    <string name="pick_location_marker_drag">Pressione</string>
+    <string name="pick_location_marker_drop">Arraste e Solte</string>
+
+    <string name="logout_dialog_title">Saindo do Aplicativo</string>
+    <string name="logout_dialog_message">Você tem certeza que deseja sair?</string>
+
+    <string name="unauthorized">Não autorizado</string>
+    <string name="please_wait">Por favor aguarde um instante.</string>
+    <string name="internet_problem_question">Problemas com a internet?</string>
+    <string name="internet_problem">Não foi possível conectar a internet</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Apagar</string>
+    <string name="cancel">Voltar</string>
+    <string name="close">Fechar</string>
+    <string name="name">Nome</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="ok">Entendi</string>
+    <string name="date">Data</string>
+    <string name="next">Continuar</string>
+    <string name="time">Hora</string>
+    <string name="save">Salvar</string>
+    <string name="add">Adicionar</string>
+    <string name="done">Confirmar</string>
+
+    <string name="dialog_transformer_status">Status</string>
+    <string name="dialog_ponto_de_entrega_error">Falha ao obter os Ponto de Entrega do Poste Geo Code: %1$s</string>
+    <string name="dialog_ponto_de_entrega_title">Buscando Pontos de Entrega</string>
+    <string name="dialog_ponto_de_entrega_message">Buscando Transformadores</string>
+    <string name="dialog_transformer_list_title">Transformadores do Poste Geo Code: %1$s</string>
+    <string name="dialog_transformer_list_empty">Ainda não há transformadores cadastrados</string>
+    <string name="dialog_transformer_power_phase">Fase</string>
+    <string name="dialog_transformer_hint_power_phase">A, B, C, AB, AC, BC, ABC</string>
+
+
+    <string name="dialog_medidor_numero">Numero</string>
+    <string name="dialog_medidor_complemento">Complemento</string>
+
+
+    <string name="dialog_afloramento_title">Buscando Afloramentos</string>
+    <string name="dialog_afloramento_actions_edit">Editar Afloramentos</string>
+    <string name="dialog_afloramento_error">Falha ao obter os Afloramentos do Poste Geo Code: %1$s</string>
+    <string name="dialog_transformer_owner">Proprietário</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

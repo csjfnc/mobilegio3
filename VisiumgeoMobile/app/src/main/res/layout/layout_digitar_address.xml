@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_button"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="Cadastro de Endereço"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <EditText
+            android:id="@+id/rua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Rua"/>
+
+
+        <EditText
+            android:id="@+id/complemento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Complemento"/>
+
+
+        <EditText
+            android:id="@+id/tipoRua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Tipo da Rua"/>
+
+
+        <EditText
+            android:id="@+id/nomeBairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Nome do Bairro"/>
+
+
+        <EditText
+            android:id="@+id/cep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Cep"/>
+
+
+        <EditText
+            android:id="@+id/uf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="UF"/>
+
+        <EditText
+            android:id="@+id/municipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Municipio"/>
+
+        <Button
+            android:id="@+id/btn_salvar_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</LinearLayout></ScrollView>

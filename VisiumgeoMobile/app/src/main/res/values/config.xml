@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="fieldservice_server_api">http://179.111.244.47:1010/api/mobile</string>
+<!--string name="fieldservice_server_api">http://179.111.244.47:81/api/mobile</string-->
+<!--string name="fieldservice_server_api">http://10.0.39.4:80/api/mobile</string-->
+<string name="fieldservice_timeout_api">900</string>
+<string name="download_folder">/visium</string>
+<string name="download_file_name">%1$s.json</string>
+<string name="gcm_sender_id">000000000000</string>
+</resources>

@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "visium",
+    "project_number": "00000000000",
+    "name": "Visium"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804644813325:android:2832581b03d55fb8",
+        "client_id": "android:com.visium.fieldservice",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.visium.fieldservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804644813325-ejki19ald741aeb16bbajdtfgfg4gvhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.visium.fieldservice",
+            "certificate_hash": "793E01BE13DFEE07902707F00AD1371F0668D287"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

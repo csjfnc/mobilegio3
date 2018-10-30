@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/post_edit_title"
+        android:text="@string/dialog_post_actions_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/red_action_bar"
+        android:layout_height="50dp"/>
+
+    <Button android:id="@+id/location_button"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/dialog_post_edit_location"
+        android:textColor="@color/color_primary_alpha"
+        android:background="@drawable/selector_white_button"
+        android:layout_height="50dp"/>
+
+    <Button android:id="@+id/btn_altura"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Altura do Poste"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/color_primary_alpha"
+        android:backgroundTint="@drawable/selector_white_button"
+        android:layout_height="50dp"/>
+
+    <Button android:id="@+id/btn_esforco"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Esforço"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/color_primary_alpha"
+        android:backgroundTint="@drawable/selector_white_button"
+        android:layout_height="50dp"/>
+
+    <Button android:id="@+id/btn_obs"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Observação"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/color_primary_alpha"
+        android:backgroundTint="@drawable/selector_white_button"
+        android:layout_height="50dp"/>
+
+    <Button android:id="@+id/btn_ocupantes"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Ocupantes"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/color_primary_alpha"
+        android:backgroundTint="@drawable/selector_white_button"
+        android:layout_height="50dp"/>
+
+
+</LinearLayout>

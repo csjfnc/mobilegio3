@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/order_title"
+        android:text="@string/dialog_service_order_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/red_action_bar"
+        android:layout_height="50dp"/>
+
+    <ScrollView
+        android:id="@+id/src"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/order_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/footer">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:theme="@style/InputTheme">
+
+                <EditText
+                    android:id="@+id/order_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="datetime"
+                    android:textColor="@color/black"
+                    android:hint="@string/dialog_service_order_start_date"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/InputTheme">
+
+                    <EditText
+                        android:id="@+id/order_finish_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:enabled="false"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:hint="@string/dialog_service_order_finish_date"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button android:id="@+id/action_button"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:text="@string/dialog_service_order_finish_close"
+                    android:textColor="@color/color_primary_alpha"
+                    android:background="@drawable/selector_white_button"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:theme="@style/InputTheme">
+
+                <EditText
+                    android:id="@+id/order_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:hint="@string/dialog_service_order_user"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:theme="@style/InputTheme">
+
+                <EditText
+                    android:id="@+id/order_posts_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:hint="@string/dialog_service_order_posts_number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/order_finished_posts_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:theme="@style/InputTheme">
+
+                <EditText
+                    android:id="@+id/order_finished_posts_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:hint="@string/dialog_service_order_finished_posts_number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/posts_button"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:text="@string/dialog_service_order_posts_button"
+                android:textColor="@color/color_primary_alpha"
+                android:background="@drawable/selector_white_button"
+                android:layout_height="50dp"/>
+
+            <Button android:id="@+id/sync"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:text="@string/dialog_service_order_sync"
+                android:textColor="@color/color_primary_alpha"
+                android:background="@drawable/selector_white_button"
+                android:layout_height="50dp"/>
+
+            <Button android:id="@+id/publish"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:text="@string/dialog_service_order_publish"
+                android:textColor="@color/color_primary_alpha"
+                android:background="@drawable/selector_white_button"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_red_button"
+            android:layout_weight="1"
+            android:layout_height="50dp"/>
+
+        <Button android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:text="@string/save"
+            android:background="@drawable/selector_white_button"
+            android:layout_weight="1"
+            android:textColor="@color/color_primary_alpha"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

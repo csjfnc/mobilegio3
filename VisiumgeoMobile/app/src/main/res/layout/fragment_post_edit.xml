@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">>
+
+    <TextView
+            android:id="@+id/post_edit_title"
+            android:text="@string/dialog_post_actions_title"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/red_action_bar"
+            android:layout_height="50dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/post_edit_title">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button android:id="@+id/location_button"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/dialog_post_edit_location"
+                android:textColor="@color/color_primary_alpha"
+                android:background="@drawable/selector_white_button"
+                android:layout_height="50dp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:columnCount="2">
+
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:layout_row="0"
+                    android:textColor="@color/white"
+                    android:background="@color/red_action_bar"
+                    android:textStyle="bold"
+                    android:text="Altura" />
+
+                <Spinner
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:id="@+id/post_height"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_row="0"
+                    android:singleLine="false"/>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:layout_row="1"
+                    android:textColor="@color/white"
+                    android:background="@color/red_action_bar"
+                    android:textStyle="bold"
+                    android:text="Esforço" />
+
+                <Spinner
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:id="@+id/post_effort"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_row="1"
+                    android:singleLine="false"/>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:layout_row="2"
+                    android:textColor="@color/white"
+                    android:background="@color/red_action_bar"
+                    android:textStyle="bold"
+                    android:text="Tipo" />
+
+                <Spinner
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:id="@+id/post_type"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_row="2"
+                    android:singleLine="false"/>
+
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_row="3"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:background="@color/red_action_bar"
+                    android:textStyle="bold"
+                    android:text="Observação" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_row="3"
+                    android:layout_gravity="fill"
+                    android:minHeight="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:theme="@style/InputTheme">
+
+                    <EditText
+                        android:id="@+id/edit_observation"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:textColor="@color/black"
+                        android:minLines="5"
+                        android:singleLine="false"
+                        android:hint="Obs..."/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_row="4"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:background="@color/red_action_bar"
+                    android:textStyle="bold"
+                    android:text="Ocupante S" />
+
+                <Spinner
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:id="@+id/ocupante_s"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_row="4"
+                    android:singleLine="false"/>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_row="5"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:background="@color/red_action_bar"
+                    android:textStyle="bold"
+                    android:text="Ocupante D" />
+
+                <Spinner
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:id="@+id/ocupante_d"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:minHeight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_row="5"
+                    android:singleLine="false"/>
+                
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/images_container"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Imagens"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button android:id="@+id/button_set_start"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Definir início"
+                        android:textColor="@color/color_primary_alpha"
+                        android:background="@drawable/selector_white_button"
+                        android:layout_height="40dp"/>
+
+                    <Button android:id="@+id/button_add"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Adicionar Imagem"
+                        android:textColor="@color/color_primary_alpha"
+                        android:background="@drawable/selector_white_button"
+                        android:layout_height="40dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layoutImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+            android:id="@+id/footer"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_gravity="bottom"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_red_button"
+                android:layout_weight="1"
+                android:layout_height="50dp"/>
+
+        <Button android:id="@+id/save_button"
+                android:layout_width="0dp"
+                android:layout_gravity="bottom"
+                android:text="@string/save"
+                android:textColor="@color/color_primary_alpha"
+                android:background="@drawable/selector_white_button"
+                android:layout_weight="1"
+                android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

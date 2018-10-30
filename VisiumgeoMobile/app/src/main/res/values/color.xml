@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="app_name_color">@color/white</color>
+
+    <color name="red_action_bar">#d9534f</color>
+    <color name="red_status_bar">#d3d9534f</color>
+    <color name="color_primary">@color/red_action_bar</color>
+    <color name="color_primary_alpha">@color/red_status_bar</color>
+    <color name="color_primary_dark">@color/white</color>
+    <color name="color_accent">@color/white</color>
+    <color name="color_text_toolbar">@color/white</color>
+    <color name="red_button">@color/color_primary</color>
+    <color name="white_button">@color/white</color>
+    <color name="white_button_ripple">#8b8b8b</color>
+    <color name="save_button">#42b151</color>
+    <color name="fundo_fotos">#f1f1f1</color>
+
+
+    <color name="input_color_primary">#8b8b8b</color>
+    <color name="input_color_primary_alpha">#979797</color>
+    <color name="input_color_primary_dark">@color/input_color_primary_alpha</color>
+    <color name="input_color_accent">@color/input_color_primary</color>
+
+</resources>

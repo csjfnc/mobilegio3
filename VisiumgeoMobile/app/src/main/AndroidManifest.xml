@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.visium.fieldservice" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PREVENT_POWER_KEY" />
+
+    <permission
+        android:name="com.visium.fieldservice.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.visium.fieldservice.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".FieldService"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.visium.fieldservice.ui.splash.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.visium.fieldservice.ui.login.LoginActivity"
+            android:label="@string/login_sign_in"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.visium.fieldservice.gcm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.visium.fieldservice.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.FieldServiceGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.FieldServiceInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.visium.fieldservice.service.RegistrationIntentService"
+            android:exported="false" >
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.visium.fieldservice.ui.maps.MapsPickLocationActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/pick_location" >
+        </activity>
+
+        <activity
+                android:name=".ui.maps.MapsServiceOrderActivity"
+                android:screenOrientation="portrait"
+                android:label="@string/app_name" >
+        </activity>
+
+        <activity
+                android:name=".ui.maps.MapsPostsActivity"
+                android:screenOrientation="portrait"
+                android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".ui.maps.MapsStrandPickLocationActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".ui.maps.MapsPostsAssociaPontoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+
+        <receiver android:name=".receiver.BroadcastReceiverDownloadManager">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+         </receiver>
+
+       <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="90ca0f33eb3e44c3b83a19cef8232000053b3729" />
+    </application>
+
+</manifest>

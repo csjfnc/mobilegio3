@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e1e1e1">
+
+            <RelativeLayout
+                android:id="@+id/lltnumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/medidor_numero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:text="Numero"/>
+
+                <TextView
+                    android:id="@+id/medidor_numero_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:text="50000"/>
+
+            </RelativeLayout>
+<View
+    android:layout_below="@+id/lltnumero"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#FFF"
+    />
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_below="@+id/lltnumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/medidor_complemento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="18dp"
+                    android:text="Complemento"/>
+
+                <TextView
+                    android:id="@+id/medidor_complemento_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:text="50000"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC">
+
+    <RelativeLayout
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:paddingLeft="5dp"
+            android:text="Editar Poste"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:id="@+id/btn_foto"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+            android:text="Fotos"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/textTitulo"
+        android:id="@+id/scroll_edit_post_completo"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encontrado?"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/encontrado_spn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#CCC"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barramento?"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/barramento_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/tituloCarac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary_alpha">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caracteristicas"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:padding="5dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/tipo_spn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#CCC"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/altura_spn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#CCC"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esforço"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/esforco_spn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/tituloOutros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_primary_alpha">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outros Dados"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Para Raio"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+                <Spinner
+                    android:id="@+id/pararaio_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aterramento"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/aterramento_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estrura Primaria"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/estrutura_primaria_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estrura Secundaria"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/estrutura_secundaria_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantidade Estai"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/qtd_estai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ano"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/ano_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ex: 1999"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Situação"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/situacao_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipamento"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/equipamento_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mufla"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/mufla_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rede Primaria"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/remeprimaria_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Defeito"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/defeito_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ocupantes S"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/ocupantes_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ocupantes D"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+                <Spinner
+                    android:id="@+id/ocupanted_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#CCC"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Observação"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/obs_poste_completo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="digite.."
+                    android:background="#e9e9e9"
+                    android:lines="3"
+                    android:layout_marginBottom="30dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:backgroundTint="#707070"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_height="54dp"/>
+
+        <Button android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:text="@string/save"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/save_button"
+            android:textColor="@color/white"
+            android:layout_height="54dp"/>
+
+    </LinearLayout>
+</RelativeLayout >

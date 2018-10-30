@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_photo_camera_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:text="Adicionar Fotos"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DDD"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="3dp">
+
+    <Button
+        android:id="@+id/definirFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/adicionarFoto"
+        android:layout_toStartOf="@+id/adicionarFoto"
+        android:backgroundTint="@color/red_action_bar"
+        android:text="Defiinir Inicio"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/adicionarFoto"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#359e01"
+        android:drawableLeft="@drawable/ic_photo_camera_white_24dp"
+        android:text="Adicionar"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todas a Fotos"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/divider_meio"
+        android:id="@+id/images_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dp"
+            android:background="#CCC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/post_edit_title">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:id="@+id/layoutImagesNovo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/canelarFotosPoste"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#707070"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Voltar" />
+
+        <Button
+            android:id="@+id/salvarFotosPoste"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#359e01"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="Salvar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

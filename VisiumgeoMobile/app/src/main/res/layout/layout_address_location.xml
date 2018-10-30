@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/red_button">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+            android:textColor="#FFF"
+            android:layout_centerHorizontal="true"
+        android:text="Escolha seu endereço"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/addressLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="of a failure, the message contains some text describing the reason for the failure."
+        android:padding="10dp"/>
+        <View
+            android:layout_below="@+id/addressLong"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCC"
+            android:layout_marginTop="30px"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button android:id="@+id/btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:text="Cancelar"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_white_button"
+            />
+
+        <Button android:id="@+id/address_digitar"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:text="Digitar Endereço"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:background="@drawable/selector_red_button"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>

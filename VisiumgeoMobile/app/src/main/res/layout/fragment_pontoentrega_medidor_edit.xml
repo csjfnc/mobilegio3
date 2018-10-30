@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_alignParentStart="true"
+            android:text="Criar novo Medidor"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/red_action_bar"/>
+
+        <GridLayout
+            android:layout_alignStart="@+id/footer"
+            android:layout_alignEnd="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="5dp"
+            android:columnCount="2"
+            android:id="@+id/layout_grid"
+            tools:context=".GridLayoutActivity" >
+
+
+
+            <TextView
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:minHeight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:layout_row="5"
+                android:textColor="@color/white"
+                android:background="@color/red_action_bar"
+                android:textStyle="bold"
+                android:text="Número" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_row="5"
+                android:layout_gravity="fill"
+                android:minHeight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp"
+                android:theme="@style/InputTheme">
+
+                <EditText
+                    android:id="@+id/edit_numero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/black"
+                    android:singleLine="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:minHeight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:layout_row="6"
+                android:textColor="@color/white"
+                android:background="@color/red_action_bar"
+                android:textStyle="bold"
+                android:text="Complemento" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_row="6"
+                android:layout_gravity="fill"
+                android:minHeight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp"
+                android:theme="@style/InputTheme">
+
+                <EditText
+                    android:id="@+id/edit_complemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/black"
+                    android:singleLine="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_below="@+id/layout_grid"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_gravity="bottom"
+                android:text="@string/cancel"
+                android:background="@drawable/selector_red_button"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="50dp"/>
+
+            <Button android:id="@+id/save_button"
+                android:layout_width="0dp"
+                android:layout_gravity="bottom"
+                android:text="@string/save"
+                android:background="@drawable/selector_white_button"
+                android:layout_weight="1"
+                android:textColor="@color/color_primary_alpha"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

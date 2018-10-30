@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lighting_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red_action_bar"
+        android:gravity="center"
+        android:text="@string/dialog_lighting_edit_create_title"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/lay_seq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lighting_title">
+
+        <TextView
+            android:id="@+id/ip_seq_tipo_braco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/ip_seq_tipo_luminaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/ip_seq_qtd_lampadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/ip_seq_qtd_luminaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/ip_seq_tipo_lampada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_seq2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lay_seq">
+
+        <TextView
+            android:id="@+id/ip_seq_potencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/ip_seq_fase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/ip_seq_acionamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/ip_seq_lampada_acessa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_seq"
+        android:layout_below="@+id/lay_seq2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#CCC"/>
+
+    <ViewFlipper
+        android:layout_below="@+id/divider_seq"
+        android:id="@+id/vf_ilumination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/edit_tipo_braco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="TIPO DO BRAÇO"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <GridView
+                android:id="@+id/gridTipoBraco"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/edit_tipo_luminaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="TIPO DE LUMINÁRIA"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <GridView
+                android:id="@+id/gridTipoLuminaria"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/text_qtd_lampadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="QUANTIDADE DE LAMPADAS"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <EditText
+                android:id="@+id/editQtdLampadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/black"
+                android:singleLine="false"
+                android:hint="@string/dialog_lighting_lamp_amount"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/text_tipo_lampada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="QUANTIDADE DE LUMINÁRIA"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <GridView
+                android:id="@+id/gridQtdLuminaria"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+
+            <!--EditText
+                android:id="@+id/edit_qtd_luminaria"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:text="0"
+                android:hint="Digite a quantidade"/-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/edit_tipo_lampada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="TIPO DA LAMPADA"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <GridView
+                android:id="@+id/gridTipoLampada"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/text_potencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="POTÊNCIA"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <GridView
+                android:id="@+id/gridPotencia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/text_faze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="FASE"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <!--EditText
+                android:id="@+id/edit_faze"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:singleLine="false"
+                android:inputType="textVisiblePassword"
+                android:selectAllOnFocus="true"
+                android:maxLength="3"
+                android:hint="@string/dialog_lighting_hint_power_phase"/-->
+
+            <GridView
+                android:id="@+id/gridFase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/text_acionamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="ACIONAMENTO"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <GridView
+                android:id="@+id/gridAcionamento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/text_lamapda_acessa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="LAMPADA ACESSA?"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <!--Spinner
+                android:id="@+id/post_height"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" /-->
+
+            <GridView
+                android:id="@+id/gridLamapdaAcessa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp" />
+        </LinearLayout>
+
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/selector_red_button"
+            android:drawableLeft="@drawable/ic_navigate_before_black_24dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_button"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Próximo"
+            android:textColor="@color/color_primary_alpha" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+android:id="@+id/bt"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="50dp"
+android:textSize="14dp"
+android:clickable="false"
+android:textStyle="bold"
+android:text="000"
+android:focusable="false"
+    android:textColor="#FFF"
+    android:backgroundTint="#535353"
+android:gravity="center" />
